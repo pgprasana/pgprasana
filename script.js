@@ -15,19 +15,16 @@ document.querySelector('#menu-btn').onclick = () => {
   navbar.classList.toggle('active');
   searchForm.classList.remove('active');
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const input = document.getElementById("search-input");
-    const button = document.getElementById("search-btn");
-
-    if (input && button) {
-        button.addEventListener("click", function () {
-            console.log(input.value);
-        });
+ document.getElementById('search-btn').addEventListener('click', function() {
+    const query = document.getElementById('search-input').value.toLowerCase();
+    const sections = ['home', 'gadgets', 'about', 'newlaunches', 'contact'];
+    if (sections.includes(query)) {
+      document.getElementById(query).scrollIntoView({ behavior: 'smooth' });
     } else {
-        console.error("Search input or button not found.");
+      alert('Section not found');
     }
-});
+  });
+
 
 // Scroll spy functionality
 let sections = document.querySelectorAll('section');
