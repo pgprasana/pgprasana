@@ -335,13 +335,13 @@ section{
     color:#fff;
 }
 
-.gadgets .gadgets-slider .box .content .price{
+.gadgets .gadgets-slider .box .content .subtitle{
     font-size: 2rem;
     font-weight: bolder;
     color:#fff;
 }
 
-.gadgets .gadgets-slider .box .content .price span{
+.gadgets .gadgets-slider .box .content .subtitle span{
     font-size: 1.5rem;
     font-weight: normal;
     color:var(--main-color);
@@ -434,12 +434,12 @@ section{
     font-weight: normal;
     color:#fff;
 }
-.newlaunches .box-container .box .content .price{
+.newlaunches .box-container .box .content .subtitle{
     font-size: 2rem;
     font-weight: bolder;
     color:#fff;
 }
-.newlaunches .box-container .box .content .price span{
+.newlaunches .box-container .box .content .subtitle span{
     font-size: 1.5rem;
     font-weight: normal;
     color:var(--main-color);
