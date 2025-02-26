@@ -1,7 +1,6 @@
 
 
-let searchForm = document.querySelector('.search-form');
-let searchInput = document.querySelector('#search-btn');
+
 let navbar = document.querySelector('.navbar');
 
 // Toggle search form on click
@@ -13,18 +12,8 @@ document.querySelector('#search-btn').onclick = () => {
 // Toggle navbar on click
 document.querySelector('#menu-btn').onclick = () => {
   navbar.classList.toggle('active');
-  searchForm.classList.remove('active');
+ 
 }
- document.getElementById('search-btn').addEventListener('click', function() {
-    const query = document.getElementById('search-input').value.toLowerCase();
-    const sections = ['home', 'gadgets', 'about', 'newlaunches', 'contact'];
-    if (sections.includes(query)) {
-      document.getElementById(query).scrollIntoView({ behavior: 'smooth' });
-    } else {
-      alert('Section not found');
-    }
-  });
-
 
 // Scroll spy functionality
 let sections = document.querySelectorAll('section');
