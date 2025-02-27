@@ -152,6 +152,7 @@ section{
     display: flex;
     align-items: center;
     opacity: 0;
+     
 }
 
 .header .search-form.active{
